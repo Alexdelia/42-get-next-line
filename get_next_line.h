@@ -6,7 +6,7 @@
 /*   By: adelille <adelille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 13:43:14 by adelille          #+#    #+#             */
-/*   Updated: 2020/11/20 11:07:54 by adelille         ###   ########.fr       */
+/*   Updated: 2020/11/20 11:27:50 by adelille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
 # include <unistd.h>
 # include <limits.h>
 
-char	*gnl_ft_strjoin(char *s1, char *s2);
-
 int		get_next_line(int fd, char **line);
+
+char	*gnl_ft_strjoin(char *s1, char *s2);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strdup(const char *s);
 size_t	ft_strlen(const char *str);

@@ -6,7 +6,7 @@
 /*   By: adelille <adelille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 13:42:55 by adelille          #+#    #+#             */
-/*   Updated: 2020/11/20 11:08:33 by adelille         ###   ########.fr       */
+/*   Updated: 2020/11/20 11:33:43 by adelille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ size_t	ft_strlen(const char *str)
 
 	i = 0;
 	while (str[i])
-		i++
+		i++;
 	return (i);
 }
 
@@ -30,7 +30,7 @@ char	*ft_strdup(const char *s)
 	if (!(str = (char *)malloc(ft_strlen(s) + 1)))
 		return (NULL);
 	i = -1;
-	while (src[++i])
+	while (s[++i])
 		str[i] = s[i];
 	str[i] = '\0';
 	return (str);
@@ -61,7 +61,7 @@ char	*gnl_ft_strjoin(char *s1, char *s2)
 
 	if (!s1)
 		return (ft_strdup(s2));
-	if (!((char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1))))
+	if (!(str = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1))))
 		return (NULL);
 	i = -1;
 	j = 0;
